@@ -1,0 +1,58 @@
+.main  {
+	display: block;
+	width: 100%;
+	height: 100%;
+	margin: 20px 0px;
+}
+
+.select, .button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.form-select {
+	max-width: 500px;
+	min-width: 500px;
+}
+
+.button {
+	margin: 20px 0px;
+}
+
+.loader {
+	background: white;
+	width: 100%;
+	height: 75vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	top: 50%;
+}
+
+.spinner {
+  display: grid;
+  place-items: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: conic-gradient(
+    from 180deg at 50% 50%,
+    rgba(82, 0, 255, 0) 0deg,
+    #5200ff 360deg
+  );
+  animation: spin 2s infinite linear;
+}
+.spinner::before {
+  content: "";
+  border-radius: 50%;
+  width: 80%;
+  height: 80%;
+  background-color: #000;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
